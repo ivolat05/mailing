@@ -441,8 +441,99 @@ ul {
 /*-----------tariff--------------*/
 .tariff {
     background: url('../images/tafig__back.jpg') no-repeat center center;
+    padding-bottom: 60px;
 }
 
 .tarif__block {
     padding-bottom: 30px;
+}
+
+.tarif__box {
+    display: none;
+}
+
+.tarif__box-active {
+    display: block;
+}
+
+.tarif__wrapp-list {
+    display: flex;
+    justify-content: start;
+}
+
+.tarif__list-inner {
+    position: relative;
+    color: red;
+    padding: 15px 10px;
+    font-size: 36px;
+    line-height: 20px;
+    border-bottom: 1px dashed red;
+    cursor: pointer;
+    transition: .2s;
+    margin-right: 25px;
+}
+
+.tarif__list-inner:hover,
+.tarif__inner-active {
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+}
+
+.tarif__list-opt {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    display: none;
+}
+
+.tarif__inner-active .tarif__list-opt {
+    display: block;
+}
+
+.tarif__opt-title {
+    font-size: 12px;
+    line-height: 15px;
+    color: #232222;
+}
+
+.tarif__opt-link {
+    font-size: 12px;
+    line-height: 15px;
+    color: red;
+}
+
+.tarif__box-title {
+    padding: 80px 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: red;
+}
+
+.tarif__box-span {
+    position: relative;
+    top: 30px;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 100px;
+}
+
+.tarif__box-inner {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 30px;
+}
+
+.tarif__checkbox {
+    padding-right: 30px;
+}
+
+
+
+
+.tarif-btn {
+    display: inline-block;
 }

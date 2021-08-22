@@ -26,8 +26,7 @@ ul {
 
 /*----------header------------*/
 .header {
-    box-shadow: 0px 64px 134px rgb(0 0 0 / 10%);
-    padding-bottom: 35px;
+    padding-bottom: 30px;
 }
 
 .header__wrapp {
@@ -43,34 +42,8 @@ ul {
     flex-direction: column;
 }
 
-.logo__wrapp {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    color: #fff;
-    display: flex;
-
-}
-
-.logo__wrapp span {
-    display: inline-block;
-    text-align: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background-color: #ff0202;
-    margin: 0 5px;
-    padding-top: 3px;
-}
-
-.logo-title {
-    display: inline-block;
-    padding-bottom: 12px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 20px;
-
-    color: #ff0202;
+.logo-img {
+    width: 250px;
 }
 
 .logo__text {
@@ -136,17 +109,35 @@ ul {
 }
 
 .header__box-inner {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 5px 24px rgb(108 17 17 / 19%);
     width: 100%;
     position: absolute;
-    bottom: -15px;
-    left: 0;
+    bottom: -70px;
+    left: -9px;
     z-index: 3;
+
 }
 
 .menu__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.menu__list-inner {
+    width: 100%;
+    padding: 18px 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__list-inner:hover {
+    background: #ebebeb;
 }
 
 
@@ -181,6 +172,8 @@ ul {
 /*-----------main------------*/
 
 .main__list {
+    width: 70%;
+    margin: 0 auto;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -193,15 +186,16 @@ ul {
 
 .main__list-link,
 .menu__list-link {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     color: #ff0202;
+    text-align: center;
 }
 
-.main__list-link:hover,
-.menu__list-link:hover {
-    color: rgb(177, 13, 13);
+
+.main__list-link:hover {
     text-decoration: underline;
 }
 
@@ -220,13 +214,13 @@ ul {
     top: 50px;
     left: 0;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 64px;
+    line-height: 100px;
     color: #fff;
 }
 
 .main__wrapp-title {
-    width: 490px;
+    width: 790px;
 }
 
 .main__wrapp-text {
@@ -237,24 +231,57 @@ ul {
 
 .main__wrapp-text span {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 64px;
+    line-height: 183px;
+    position: relative;
+    top: 12px;
 }
 
 .main__wrapp-box {
     box-shadow: 0px 64px 134px rgb(0 0 0 / 10%);
-    width: 65%;
+    width: 72%;
     position: absolute;
-    bottom: -56px;
+    bottom: 75px;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
     display: flex;
     border-radius: 10px;
+    z-index: 1;
 }
 
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    width: 2em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    transform: translateX(-5em) skewX(-45deg);
+    transition: .5s;
+    animation: move__light 4s infinite;
+}
+
+@keyframes move__light {
+    from {
+        transform: translateX(-5em) skewX(-45deg);
+    }
+
+    to {
+        transform: translateX(50em) skewX(-45deg);
+    }
+
+}
+
+
 .main__form {
-    padding: 22px 20px;
+    padding: 40px 27px 40px 50px;
 }
 
 .main__form-tile {
@@ -262,6 +289,13 @@ ul {
     font-size: 30px;
     line-height: 20px;
     padding-bottom: 10px;
+}
+
+.main__wrapper {
+    background: #f4f4f4;
+    position: relative;
+    padding-top: 75px;
+    z-index: 0;
 }
 
 .main__form-text {
@@ -290,7 +324,7 @@ ul {
 }
 
 .main__cont {
-    background: red;
+    background: url('../images/back.png') no-repeat center center/cover;
 }
 
 
@@ -302,8 +336,8 @@ ul {
 }
 
 .main__cont {
-    width: 35%;
-    padding: 50px 15px;
+    width: 37%;
+    padding: 50px 15px 0 98px;
     color: #fff;
 }
 
@@ -327,4 +361,12 @@ ul {
 
 .main__cont-subtext {
     text-align: right;
+}
+
+/*-----block title----------*/
+.block__title-subttitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ff0202;
 }

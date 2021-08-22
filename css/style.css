@@ -364,9 +364,85 @@ ul {
 }
 
 /*-----block title----------*/
+.task {
+    padding: 60px 0 90px;
+}
+
 .block__title-subttitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ff0202;
+    padding-bottom: 10px;
+}
+
+.block__title-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 40px;
+    margin: 0 0 30px;
+    color: #373737;
+}
+
+/*-----task------------*/
+.task__wrapp {
+    max-width: 850px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.task__wrapp-box {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.task__box-inner {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task__box-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+.task__box-text {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.task__box-link {
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    color: #ff0202;
+    color: red;
+}
+
+.task__box-link:hover {
+    text-decoration: underline;
+}
+
+
+.task__box-link::after {
+    content: url('../images/arrow.png');
+}
+
+/*-----------tariff--------------*/
+.tariff {
+    background: url('../images/tafig__back.jpg') no-repeat center center;
+}
+
+.tarif__block {
+    padding-bottom: 30px;
 }

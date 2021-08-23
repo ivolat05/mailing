@@ -28,4 +28,27 @@ $(function () {
         });
     });
 
+    const tabsBtn = document.querySelectorAll('.mailing__wrapp-inner');
+    const tabsItem = document.querySelectorAll('.mailing__wrapp-box');
+    tabsBtn.forEach((item) => {
+        item.addEventListener('click', function () {
+            let currentBtn = item;
+            let tabsId = currentBtn.getAttribute('data-active');
+            let currentTab = document.querySelector(tabsId);
+
+
+            if (!currentBtn.classList.contains('mailing__wrapp-inner--active')) {
+                tabsBtn.forEach(function (item) {
+                    item.classList.remove('mailing__wrapp-inner--active');
+                });
+                tabsItem.forEach(function (item) {
+                    item.classList.remove('mailing__wrapp-box--active');
+                });
+
+                currentBtn.classList.add('mailing__wrapp-inner--active');
+                currentTab.classList.add('mailing__wrapp-box--active');
+            }
+        });
+    });
+
 });

@@ -537,3 +537,83 @@ ul {
 .tarif-btn {
     display: inline-block;
 }
+
+/*--------------mailing---------------*/
+.mailing {
+    padding: 70px 0;
+}
+
+.mailing__block {
+    max-width: 900px;
+}
+
+.mailing__wrappers {
+    box-shadow: 0 5px 24px #4a1e01;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mailing__wrapp-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mailing__wrapp-inner {
+    width: 25%;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: left;
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, .04);
+    cursor: pointer;
+    color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mailing__wrapp-inner:nth-last-child(1) {
+    background: rgba(0, 0, 0, .14);
+}
+
+.mailing__wrapp-inner:nth-last-child(2) {
+    background: rgba(0, 0, 0, .07);
+}
+
+.mailing__wrapp-inner--active {
+    color: red;
+    background: #fff;
+}
+
+.mailing__wrapp-box {
+    padding: 40px 35px 10px 35px;
+    background: #fff;
+    display: none;
+}
+
+.mailing__wrapp-box--active {
+    display: block;
+}
+
+.mailing__box-inner {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: #202020;
+    padding-bottom: 30px;
+    margin-left: 35px;
+    position: relative;
+}
+
+.mailing__box-inner::before {
+    content: url("../images/mailing__icon.png");
+    position: absolute;
+    left: -30px;
+}
+
+.mailing__box-link {
+    color: #ff0000;
+    text-decoration: underline;
+}

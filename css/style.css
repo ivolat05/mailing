@@ -170,6 +170,9 @@ ul {
 }
 
 /*-----------main------------*/
+.main {
+    padding-bottom: 60px;
+}
 
 .main__list {
     width: 70%;

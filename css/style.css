@@ -727,7 +727,7 @@ ul {
 
 /*---------------companies------------*/
 .companies {
-    padding: 120px 0 60px;
+    padding-top: 120px;
     background: url('../images/fon.jpg') no-repeat center center;
 }
 

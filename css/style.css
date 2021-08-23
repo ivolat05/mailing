@@ -617,3 +617,58 @@ ul {
     color: #ff0000;
     text-decoration: underline;
 }
+
+/*-----------benefits-----------*/
+.benefits-wrapp {
+    max-width: 1000px;
+}
+
+.benefits__box-inner {
+    width: 320px;
+}
+
+/*-------------mail-----------*/
+.mail {
+    padding: 60px 0;
+}
+
+.conteiner {}
+
+.block__title {}
+
+.block__title-title {}
+
+.mail-title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.mail__wrapp {}
+
+.mail__wrapp-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mail__wrapp-box:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.mail__box-inner {
+    max-width: 390px;
+    color: #ff0000;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.mail__box-title {
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.mail__box-text {
+    font-weight: 400;
+}

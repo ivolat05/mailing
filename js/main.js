@@ -89,4 +89,12 @@ $(function () {
         });
     }
 
+
+    $('.partfolio__wrapp-box').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+    });
 });

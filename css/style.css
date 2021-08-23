@@ -724,3 +724,58 @@ ul {
 .test__wrapp-inner-active {
     background: #fff;
 }
+
+/*---------------companies------------*/
+.companies {
+    padding: 120px 0 60px;
+    background: url('../images/fon.jpg') no-repeat center center;
+}
+
+
+.conteiner__box {
+    position: relative;
+    width: 228px;
+    height: 260px;
+}
+
+.conteiner__box-img {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+}
+
+.conteiner__box-inner {
+    width: 228px;
+    height: 130px;
+    background: rgb(177, 13, 13);
+    position: absolute;
+    top: 66px;
+}
+
+
+.conteiner__box-inner:nth-child(2) {
+    transform: rotate(-60deg);
+}
+
+.conteiner__box-inner:nth-child(3) {
+    transform: rotate(60deg);
+}
+
+.compaines__wrapp {
+    width: 930px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+
+.compaines__wrapp:nth-child(2) {
+    width: 700px;
+    top: -50px;
+}
+
+.compaines__wrapp:nth-child(3) {
+    top: -100px;
+}

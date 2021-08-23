@@ -779,3 +779,77 @@ ul {
 .compaines__wrapp:nth-child(3) {
     top: -100px;
 }
+
+/*-----------accordion--------------*/
+.accordion {
+    padding: 60px 0;
+}
+
+.accordion__wrapp {
+    padding: 40px;
+    box-shadow: 0 5px 24px rgb(74 30 30 / 50%);
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.accordion__wrapp-inner {
+    box-shadow: 0 10px 60px rgb(0 0 0 / 15%);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.accordion-title {
+    display: block;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #444;
+    cursor: pointer;
+
+    padding: 33px 45px 33px 38px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    text-align: left;
+
+
+    font-size: 20px;
+    line-height: 24px;
+    color: #102f52;
+    position: relative;
+}
+
+
+.active {
+    padding: 33px 45px 0 38px;
+}
+
+
+.accordion-title:after {
+    content: url('../images/plus.png');
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.active:after {
+    content: url('../images/minus.png');
+    transform: rotate(180deg);
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+    padding: 17px 38px 28px 38px;
+    font-weight: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    color: #102f52;
+}

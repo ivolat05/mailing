@@ -387,6 +387,10 @@ ul {
     color: #373737;
 }
 
+.block__title {
+    padding-bottom: 20px;
+}
+
 /*-----task------------*/
 .task__wrapp {
     max-width: 850px;
@@ -444,7 +448,8 @@ ul {
 /*-----------tariff--------------*/
 .tariff {
     background: url('../images/tafig__back.jpg') no-repeat center center;
-    padding-bottom: 60px;
+
+    padding: 30px 0 60px;
 }
 
 .tarif__block {
@@ -1041,4 +1046,206 @@ ul {
 .slick-dots .slick-active button {
     background: red;
     color: red;
+}
+
+/*---------index__3-----------*/
+.main__box {
+    padding-top: 170px;
+    display: flex;
+}
+
+.main__box-link {
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.main__box-link--active,
+.main__box-link:hover {
+    background: red;
+}
+
+/*------------guarantees---------*/
+.guarantees {
+    padding: 30px 0 60px;
+}
+
+.guarantees__wrapp {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.guarantees__list {
+    max-width: 540px;
+}
+
+.guarantees__list-inner {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.guarantees__list-inner::before {
+    content: url('../images/mailing__icon.png');
+    position: absolute;
+    left: -30px;
+}
+
+.guarantees-btn,
+.possib-btn {
+    display: inline-block;
+}
+
+/*-----------possib---------*/
+.possib {
+    padding: 30px 0 60px;
+}
+
+.possib__form {
+    width: 1150px;
+    display: flex;
+    margin-bottom: 30px;
+
+}
+
+.form__box-head {
+    width: 250px;
+    background-color: #f4eaea;
+    color: red;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.form__box-line {
+    width: 250px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #faf4f4;
+}
+
+.form__box-line:nth-child(2n+1) {
+    background: #fffcfc;
+}
+
+.form__box:nth-child(1) .form__box-head,
+.form__box:nth-child(1) .form__box-line {
+    width: 650px;
+    text-align: left;
+}
+
+.--red {
+    color: red;
+}
+
+.--green {
+    color: green;
+}
+
+.form__box:nth-last-child(1) {
+    border: 3px solid red;
+}
+
+/*----------exampl---------------*/
+.exampl {
+    background: url('../images/tafig__back.jpg') no-repeat center center;
+    padding: 60px 0;
+
+}
+
+.exampl__img {
+    transform: rotate(-25deg);
+    margin: 30px;
+}
+
+/*--------experince-------------*/
+.experience {
+    padding: 60px 0;
+}
+
+.experience__wrapp {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience__wrapp-box {
+    padding: 50px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: 0 5px 24px #4a1e01;
+    overflow: hidden;
+    position: relative;
+    margin: 30px;
+}
+
+.experience__box-img {
+    position: absolute;
+    right: 45px;
+    bottom: -56px;
+    width: 270px;
+}
+
+.experience__box-inner {
+    width: 410px;
+}
+
+.experince__box-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.experince__box-subtitile {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    color: red;
+}
+
+.experince__box-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.experince__box-conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.experince__inner-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.experince__inner-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.experince-btn {
+    display: inline-block;
 }

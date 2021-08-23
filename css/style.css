@@ -565,7 +565,7 @@ ul {
     line-height: 20px;
     text-align: left;
     padding: 20px 10px;
-    background: rgba(0, 0, 0, .04);
+    background: rgba(0, 0, 0, .07);
     cursor: pointer;
     color: #202020;
     display: flex;
@@ -574,13 +574,6 @@ ul {
     justify-content: center;
 }
 
-.mailing__wrapp-inner:nth-last-child(1) {
-    background: rgba(0, 0, 0, .14);
-}
-
-.mailing__wrapp-inner:nth-last-child(2) {
-    background: rgba(0, 0, 0, .07);
-}
 
 .mailing__wrapp-inner--active {
     color: red;
@@ -632,12 +625,6 @@ ul {
     padding: 60px 0;
 }
 
-.conteiner {}
-
-.block__title {}
-
-.block__title-title {}
-
 .mail-title {
     text-align: center;
     padding-bottom: 50px;
@@ -661,7 +648,7 @@ ul {
     max-width: 390px;
     color: #ff0000;
     font-size: 30px;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .mail__box-title {
@@ -717,9 +704,6 @@ ul {
     background: rgba(0, 0, 0, .07);
 }
 
-.mailing__wrapp-inner:nth-last-child(1) {
-    background: rgba(0, 0, 0, .2);
-}
 
 .test__wrapp-inner-active {
     background: #fff;
@@ -852,4 +836,97 @@ ul {
     line-height: 28px;
     text-align: left;
     color: #102f52;
+}
+
+/*-------------contact-----------*/
+.contact {
+    padding-bottom: 70px;
+}
+
+.contact__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+..contact__wrapp-inner {}
+
+.contact__inner-text {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.contact__inner-box {
+    padding: 30px 0 50px;
+}
+
+.contact__tell {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000;
+
+}
+
+.contact-mail {
+    display: block;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    color: red;
+}
+
+.contact__wrapp-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.contact__wrapp-content {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contact__form {
+    box-shadow: 0 5px 24px rgb(74 30 30 / 50%);
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 50px 50px 67px;
+}
+
+.contact__form-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+
+.contact__form-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+
+.contact__form-input {
+    border-radius: 5px;
+    width: 70%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 18px 10px;
+    margin-bottom: 20px;
+}
+
+.btn {}
+
+.contact__form-content {
+    padding-top: 25px;
+}
+
+.contact__form-link {
+    text-decoration: underline;
 }

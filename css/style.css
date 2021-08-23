@@ -336,7 +336,7 @@ ul {
 }
 
 .main__cont {
-    width: 37%;
+    width: 38%;
     padding: 50px 15px 0 98px;
     color: #fff;
 }
@@ -671,4 +671,56 @@ ul {
 
 .mail__box-text {
     font-weight: 400;
+}
+
+/*--------test--------*/
+.test {
+    padding-bottom: 60px;
+}
+
+.test__wrapp-box {
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: none;
+}
+
+.test__wrapp {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 5px 24px #4a1e01;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #000;
+
+}
+
+.test__wrapp-box-active {
+    display: flex;
+}
+
+.test__wrapp-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test__wrapp-inner {
+    width: 34%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(0, 0, 0, .07);
+}
+
+.mailing__wrapp-inner:nth-last-child(1) {
+    background: rgba(0, 0, 0, .2);
+}
+
+.test__wrapp-inner-active {
+    background: #fff;
 }

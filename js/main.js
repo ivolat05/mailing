@@ -51,4 +51,27 @@ $(function () {
         });
     });
 
+    const tabBtns = document.querySelectorAll('.test__wrapp-inner');
+    const tabItems = document.querySelectorAll('.test__wrapp-box');
+    tabBtns.forEach((item) => {
+        item.addEventListener('click', function () {
+            let currentBtn = item;
+            let tabsId = currentBtn.getAttribute('data-tabs');
+            let currentTab = document.querySelector(tabsId);
+
+
+            if (!currentBtn.classList.contains('test__wrapp-inner-active')) {
+                tabBtns.forEach(function (item) {
+                    item.classList.remove('test__wrapp-inner-active');
+                });
+                tabItems.forEach(function (item) {
+                    item.classList.remove('test__wrapp-box-active');
+                });
+
+                currentBtn.classList.add('test__wrapp-inner-active');
+                currentTab.classList.add('test__wrapp-box-active');
+            }
+        });
+    });
+
 });

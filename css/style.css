@@ -1891,3 +1891,8 @@ ul {
 }
 
 /*----------portfolio------------*/
+@media(max-width: 1080px) {
+    .partfolio {
+        padding: 20px 0 60px;
+    }
+}

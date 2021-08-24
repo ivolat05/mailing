@@ -2,7 +2,8 @@ $(function () {
     $('.menu__burger').click((event) => {
         $('.menu').toggleClass('menu__active'),
             $('.menu__burger').toggleClass('menu__burger-active'),
-            $('body').toggleClass('look')
+            $('body').toggleClass('look'),
+            $('.header__wrapp-box').toggleClass('header__wrapp-box-active')
     });
 
     const navBtn = document.querySelectorAll('.tarif__list-inner');

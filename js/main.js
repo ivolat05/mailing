@@ -110,4 +110,32 @@ $(function () {
         autoplaySpeed: 2000,
         arrows: false
     });
+
+    $('.compaines__wrapp').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false
+    });
+
+    $('.compaines__wrapp').slick('unslick');
+    window.addEventListener("resize", function () {
+        if (window.innerWidth <= 780) {
+            $('.compaines__wrapp').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false
+            });
+        } else {
+            $('.compaines__wrapp').slick('unslick');
+        }
+    });
+
 });

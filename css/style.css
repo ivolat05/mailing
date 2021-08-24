@@ -1106,13 +1106,13 @@ ul {
 
 .partfolio-img {
     width: 100%;
-    height: 440px;
+    height: 100%;
 }
 
 
 
 .partfolio__title {
-    width: 50%;
+    width: 100%;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -1123,7 +1123,7 @@ ul {
 }
 
 .partfolio__content {
-    width: 50%;
+    width: 100%;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -1136,6 +1136,7 @@ ul {
 
 .partfolio__conteiner-inner {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: start;
     color: #000;
     transition: .4s;
@@ -1888,3 +1889,5 @@ ul {
         padding: 15px;
     }
 }
+
+/*----------portfolio------------*/

@@ -126,6 +126,32 @@ $(function () {
         arrows: false
     });
 
+    $('.exampl__wrapp').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [{
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+
     $('.compaines__wrapp').slick({
         infinite: true,
         slidesToShow: 1,
